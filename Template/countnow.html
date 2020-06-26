@@ -1,0 +1,13 @@
+<H1> THE TOTAL WORD/S IN YOUR SENTENCE IS {{htmltextcount}} </H1>
+<a href = "{% url 'home' %}" > Start Again </a>
+<H3> {{htmlwholetext}}</H3>
+
+
+
+<h1> Word count </h1>
+
+{% for word,count in sortdictionary %}
+
+{{word}} - {{count}}
+<br>
+{% endfor %}
